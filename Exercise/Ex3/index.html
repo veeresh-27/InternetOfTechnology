@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 3</title>
+    <style>
+      body {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+          Geneva, Verdana, sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      h1 {
+        font-size: 48px;
+      }
+      table {
+        border-collapse: collapse;
+        padding: 100px;
+        margin: 20px 0;
+      }
+      th {
+        padding: 16px 32px;
+        font-size: 24px;
+      }
+      td {
+        text-align: center;
+        font-size: 18px;
+        padding: 12px;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      #header {
+        background-color: rgb(32, 30, 30);
+        color: #f6f6f6;
+        display: flex;
+        padding: 20px 70px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #header ul {
+        list-style: none;
+        display: flex;
+        gap: 8px;
+        text-decoration: underline;
+      }
+      #body {
+        padding: 0 70px;
+      }
+      img {
+        width: 300px;
+        object-fit: cover;
+      }
+      #gallery {
+        display: flex;
+        flex-direction: column;
+      }
+      #images {
+        display: flex;
+        width: 100%;
+        gap: 12px;
+        overflow-y: scroll;
+      }
+      #footer {
+        text-align: center;
+        color: #f6f6f6;
+        background-color: rgb(32, 30, 30);
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="name">Hotel Manthara</div>
+      <div class="navLinks">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="body">
+      <center>
+        <h1 style="margin-bottom: 0">Hotel Manthara</h1>
+        <p style="margin: 0">Feel like a home</p>
+      </center>
+      <center>
+        <table border="">
+          <caption style="font-size: 24px; margin-top: 16px">
+            Rooms
+          </caption>
+          <tr>
+            <th>Type of Room</th>
+            <th>No of Rooms Aavaible</th>
+            <th>Cost/day</th>
+          </tr>
+          <tr>
+            <td>Prime</td>
+            <td>11</td>
+            <td>&#8377;899</td>
+          </tr>
+          <tr>
+            <td>Deluxe</td>
+            <td>5</td>
+            <td>&#8377;1299</td>
+          </tr>
+          <tr>
+            <td>Ultra Deluxe</td>
+            <td>3</td>
+            <td>&#8377;1599</td>
+          </tr>
+          <tr>
+            <td>Gold</td>
+            <td>4</td>
+            <td>&#8377;1999</td>
+          </tr>
+        </table>
+      </center>
+      <hr />
+
+      <div id="list">
+        <div style="font-size: 24px; margin-top: 16px">Facilities</div>
+        <ol>
+          <li>Pool</li>
+          <ul type="disc">
+            <li>24X7</li>
+          </ul>
+          <li>Parking</li>
+          <ul type="disc">
+            <li>2 and 4 wheeler</li>
+          </ul>
+          <li>Room Service</li>
+          <ul type="disc">
+            <li>Not for Prime</li>
+            <li>From 6:00AM to 11:59PM</li>
+          </ul>
+          <li>Airconditioning</li>
+          <ul type="disc">
+            <li>Only for Ultra Deluxe and Gold</li>
+          </ul>
+        </ol>
+      </div>
+      <hr />
+      <div id="gallery">
+        <div style="font-size: 24px; margin-top: 16px">Gallery</div>
+        <div id="images">
+          <img
+            src="https://image.shutterstock.com/image-illustration/hotel-sign-stars-3d-illustration-260nw-195879770.jpg"
+            alt="first image"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4RfTeFfJ95JwH-6UgzqzmJu08kK9rJC7538umNaTklVmSAqh9W2VLYS3Got_q2M_znK0&usqp=CAU"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            alt=""
+          />
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/226593697.jpg?k=cdf681a782e3e297aec0bc2faed3582af1de68128acd1b5ff11f3774f35013fc&o=&hp=1"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div id="footer">&#169; All rights reserved</div>
+  </body>
+</html>
